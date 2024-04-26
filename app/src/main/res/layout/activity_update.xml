@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".updateActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/editNoteHeading"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/lime"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:title="       Edit Bucket List"
+        app:titleTextColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/returnButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="18dp"
+        android:layout_marginRight="19dp"
+        android:layout_margin="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginVertical="16dp"
+
+        />
+    <ImageView
+        android:id="@+id/updateSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_add_task_24"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="25dp"
+        android:layout_alignTop="@id/editNoteHeading"
+        android:layout_marginEnd="6dp"/>
+
+    <EditText
+        android:id="@+id/updateTitleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter the Title"
+        android:padding="16dp"
+        android:textSize="20sp"
+        android:layout_below="@id/editNoteHeading"
+        android:background="@drawable/orange_border"
+        android:layout_marginBottom="22dp"
+        android:layout_margin="12dp"
+        android:maxLines="1"
+        />
+    <EditText
+        android:id="@+id/updatecontentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:hint="Enter the Content"
+        android:gravity="top"
+        android:padding="16dp"
+        android:layout_margin="12dp"
+        android:textSize="18sp"
+        android:background="@drawable/orange_border"
+        android:layout_below="@id/updateTitleEditText"
+        android:layout_marginTop="12dp"
+        />
+    <CheckBox
+        android:id="@+id/completedCheckBoxs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Completed"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="12dp"
+        android:layout_below="@id/updatecontentEditText"
+        android:padding="16dp" />
+
+
+
+</RelativeLayout>
